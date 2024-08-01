@@ -8,6 +8,12 @@ gridButton.addEventListener("click", function() {
     changeGrid();
 });
 
+const resetButton = document.querySelector("#reset");
+resetButton.addEventListener("click", function() {
+    console.log("Hi!");
+    resetGrid();
+});
+
 function changeGrid() {
     let child = container.lastElementChild;
     while(child) {
@@ -37,3 +43,10 @@ function setGrid(gridSize) {
         container.appendChild(square);
     }
 }
+
+function resetGrid() {
+        const square = container.querySelectorAll("#square");
+        square.forEach(element => {
+            element.style.backgroundColor = "white";
+        });
+    }

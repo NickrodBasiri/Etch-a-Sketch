@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: lightgray;
 }
 
 #container {
@@ -15,4 +16,36 @@ body {
 
 #square {
     outline: 1px solid gray;
+    background-color: white;
 }
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 800px;
+    width: 750px;
+    border: 4px solid black;
+}
+
+.title {
+    color: white;
+    margin: 0;
+}
+
+button {
+    background-color: gray;
+    height: 32px;
+    width: 128px;
+    margin: 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+#buttonContainer {
+    display: flex;
+    gap: 32px
+}
+
